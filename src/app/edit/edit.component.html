@@ -1,0 +1,21 @@
+<div id="inp" class="container">
+        <form [formGroup]="details" (submit)="submited()">
+          <div class="input-group input-group-sm mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroup-sizing-sm">username</span>
+            </div>
+            <input type="text" class="form-control" formControlName="user" aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-sm" />
+          </div>
+          <div class="input-group input-group-sm mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="inputGroup-sizing-sm">password</span>
+            </div>
+            <input type="text" formControlName="password" class="form-control" aria-label="Sizing example input"
+              aria-describedby="inputGroup-sizing-sm" />
+          </div>
+          <div class="col-auto">
+              <button type="submit" class="btn btn-primary mb-2">Update</button>
+            </div>
+        </form>
+      </div>
